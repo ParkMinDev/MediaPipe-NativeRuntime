@@ -1,0 +1,23 @@
+{
+  "name": "com.parkminpackages.mediapipe.nativeruntime",
+  "displayName": "ParkMinPackages.MediaPipe.NativeRuntime",
+  "version": "0.1.0",
+  "license": "MIT",
+  "documentationUrl": "https://github.com/ParkMinPackages/MediaPipe-NativeRuntime#readme",
+  "changelogUrl": "https://github.com/ParkMinPackages/MediaPipe-NativeRuntime/blob/main/CHANGELOG.md",
+  "licensesUrl": "https://github.com/ParkMinPackages/MediaPipe-NativeRuntime/blob/main/LICENSE.md",
+  "unity": "6000.5",
+  "description": "Platform-native MediaPipe binaries and model assets for ParkMinPackages Unity integrations.",
+  "dependencies": {},
+  "keywords": [
+    "unity",
+    "mediapipe",
+    "native",
+    "models",
+    "parkminpackages"
+  ],
+  "author": {
+    "name": "ParkMinPackages",
+    "url": "https://github.com/ParkMinPackages"
+  }
+}
