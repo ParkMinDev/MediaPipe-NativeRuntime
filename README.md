@@ -1,22 +1,21 @@
-# ParkMinPackages.MediaPipe.NativeRuntime
+# MediaPipe-NativeRuntime
 
-Platform-native MediaPipe binaries and model assets for ParkMinPackages Unity integrations.
+Build and distribution repository for the ParkMinPackages MediaPipe native runtime.
 
-This package is the deployment boundary between MediaPipe native distributions and Unity. It does not provide the managed Runner API; use `ParkMinPackages.MediaPipePlugin` for Unity-facing runtime features.
+The repository keeps the pinned upstream MediaPipe source and local build workspace separate from the installable Unity Package Manager package.
 
-## Artifacts
+## Unity Package
 
-- Windows x86_64: official MediaPipe Tasks C `libmediapipe.dll`
-- Android ARM64: source-built MediaPipe Tasks C `libmediapipe.so` with OpenCV 4.12.0 runtime
-- WebGL WebAssembly artifacts: planned
-- Pose Landmarker Lite, Full, and Heavy float16 v1 task models
+Install the package from the `UPMPackage` subdirectory.
 
-Large binary and model files are tracked with Git LFS. Install Git LFS before installing this package from Git.
+```text
+https://github.com/ParkMinPackages/MediaPipe-NativeRuntime.git?path=/UPMPackage
+```
 
-## Build Provenance
+Package documentation is available at [`UPMPackage/README.md`](UPMPackage/README.md).
 
-`native-version.json` records the upstream MediaPipe version, source commits, build number, and available platforms for each published package revision.
+## Repository Layout
 
-The model entries in `native-version.json` record each bundled model variant, source version, package path, and SHA-256 digest.
-
-The Android ARM64 artifact is built from the pinned `Source/MediaPipe` commit with Bazel 7.7.0, Android NDK r28b, and the official `android_arm64` configuration. It exports the same MediaPipe Tasks C entry points used by the Windows artifact.
+- `Source/MediaPipe`: pinned upstream MediaPipe source submodule
+- `Build`: ignored local build tools and intermediate outputs
+- `UPMPackage`: installable Unity package containing native binaries and models

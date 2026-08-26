@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.1.1] - 2026-08-27
+
+- Moved the installable Unity package into the `UPMPackage` subdirectory.
+- Added root package-path metadata for ParkMinPackages Package Manager discovery.
+- Added Unity metadata for package root files and updated package documentation URLs.
+
 ## [0.1.0] - 2026-08-27
 
 - Added the initial Unity package structure for native MediaPipe artifacts.
