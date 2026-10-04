@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.1.4] - 2026-10-04
+
+### Changed
+- Standardized package identity and display name as `com.parkmindev.mediapipe.nativeruntime.upm` / `ParkMinDev.MediaPipe.NativeRuntime.UPM`.
+- Synchronized own-package dependency versions for this release; C# namespaces and assembly names remain unchanged.
+
 ## [0.1.3] - 2026-10-04
 
 ### Changed
