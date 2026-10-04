@@ -7,7 +7,7 @@ This package is the deployment boundary between MediaPipe native distributions a
 ## Installation
 
 ```text
-https://github.com/ParkMinDev/MediaPipe-NativeRuntime.git?path=/UPM
+https://github.com/ParkMinDev/MediaPipeNativeRuntime.git?path=/UPM
 ```
 
 ## Artifacts

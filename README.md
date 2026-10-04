@@ -1,4 +1,4 @@
-# MediaPipe-NativeRuntime
+# MediaPipeNativeRuntime
 
 Build and distribution repository for the ParkMinPackages MediaPipe native runtime.
 
@@ -9,7 +9,7 @@ The repository keeps the pinned upstream MediaPipe source and local build worksp
 Install the package from the `UPM` subdirectory.
 
 ```text
-https://github.com/ParkMinDev/MediaPipe-NativeRuntime.git?path=/UPM
+https://github.com/ParkMinDev/MediaPipeNativeRuntime.git?path=/UPM
 ```
 
 Package documentation is available at [`UPM/README.md`](UPM/README.md).

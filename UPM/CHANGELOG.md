@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.1.6] - 2026-10-04
+
+### Changed
+- Renamed the repository to MediaPipeNativeRuntime and updated installation and documentation URLs.
+- Package identity, native binaries, model paths, and Unity asset GUIDs remain unchanged.
+
 ## [0.1.5] - 2026-10-04
 
 ### Changed
