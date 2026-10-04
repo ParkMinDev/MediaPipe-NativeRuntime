@@ -25,7 +25,7 @@ Windows compilation was verified with MSVC 14.51.36231 and JDK 21. Other compile
 Use a reasonably short local path. Bazel's generated Windows paths can become very long.
 
 ```powershell
-git -c core.longpaths=true clone --recurse-submodules https://github.com/ParkMinPackages/MediaPipe-NativeRuntime.git NativeRuntime
+git -c core.longpaths=true clone --recurse-submodules https://github.com/ParkMinDev/MediaPipe-NativeRuntime.git NativeRuntime
 cd NativeRuntime
 git lfs pull
 $env:JAVA_HOME = 'C:/Program Files/Java/your-jdk-21-directory'

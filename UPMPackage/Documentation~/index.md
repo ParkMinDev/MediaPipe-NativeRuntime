@@ -1,3 +1,3 @@
 # MediaPipe Native Runtime
 
-This package will contain platform-native MediaPipe build outputs and model assets produced from `ParkMinPackages/MediaPipe-Native`.
+This package contains platform-native MediaPipe build outputs and model assets produced from `ParkMinDev/MediaPipe-NativeRuntime`.
