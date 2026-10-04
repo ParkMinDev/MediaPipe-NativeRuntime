@@ -4,3 +4,5 @@ Thumbs.db
 *.suo
 Build/Tools/*
 Build/Output/*
+/Build/MediaPipeNativeBuild/
+/Build/.bazel/

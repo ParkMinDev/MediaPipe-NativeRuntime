@@ -1,0 +1,12 @@
+--- a/mediapipe/framework/port/advanced_proto_inc.h
++++ b/mediapipe/framework/port/advanced_proto_inc.h
+@@ -22,7 +22,9 @@
+ #include "google/protobuf/descriptor.pb.h"
+ #include "google/protobuf/descriptor_database.h"
+ #include "google/protobuf/dynamic_message.h"
++#if !defined(_WIN32)
+ #include "google/protobuf/io/gzip_stream.h"
++#endif
+ #include "google/protobuf/io/zero_copy_stream_impl.h"
+ #include "google/protobuf/message.h"
+ #include "mediapipe/framework/port.h"

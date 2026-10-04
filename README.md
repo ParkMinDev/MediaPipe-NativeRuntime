@@ -17,5 +17,9 @@ Package documentation is available at [`UPMPackage/README.md`](UPMPackage/README
 ## Repository Layout
 
 - `Source/MediaPipe`: pinned upstream MediaPipe source submodule
-- `Build`: ignored local build tools and intermediate outputs
+- `Build`: tracked build scripts, configuration, source patches, and ignored local tools/outputs
 - `UPMPackage`: installable Unity package containing native binaries and models
+
+## Rebuild from source
+
+See [`Build/README.md`](Build/README.md) for clean-clone preparation, Windows source compilation, output paths, and toolchain requirements.

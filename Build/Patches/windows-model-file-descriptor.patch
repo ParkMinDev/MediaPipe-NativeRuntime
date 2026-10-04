@@ -1,0 +1,20 @@
+diff --git a/mediapipe/tasks/cc/core/base_options.cc b/mediapipe/tasks/cc/core/base_options.cc
+index 92055a8..7df590e 100644
+--- a/mediapipe/tasks/cc/core/base_options.cc
++++ b/mediapipe/tasks/cc/core/base_options.cc
+@@ -213,6 +213,7 @@ bool IsLiteRtLmModel(const BaseOptions& base_options) {
+       return true;
+     }
+   }
++#if !defined(_WIN32)
+   if (base_options.model_asset_descriptor_meta.fd != -1) {
+     int fd = base_options.model_asset_descriptor_meta.fd;
+     int offset = base_options.model_asset_descriptor_meta.offset;
+@@ -225,6 +226,7 @@ bool IsLiteRtLmModel(const BaseOptions& base_options) {
+       return true;
+     }
+   }
++#endif
+   return false;
+ }
+ 

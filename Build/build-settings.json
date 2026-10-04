@@ -1,0 +1,25 @@
+{
+  "source": {
+    "url": "https://github.com/google-ai-edge/mediapipe.git",
+    "commit": "9d6bcb950910900d81538dded9ac8399b331b41a"
+  },
+  "bazelVersion": "7.7.0",
+  "pythonVersion": "3.11",
+  "tools": [
+    {
+      "file": "bazelisk-windows-amd64.exe",
+      "url": "https://github.com/bazelbuild/bazelisk/releases/download/v1.29.0/bazelisk-windows-amd64.exe",
+      "sha256": "092A8738D5B41AAE7A85C42CC961B1034E3389ABA43FFC20C0FABDA7B43E095B"
+    },
+    {
+      "file": "opencv-3.4.10-vc14_vc15.exe",
+      "url": "https://github.com/opencv/opencv/releases/download/3.4.10/opencv-3.4.10-vc14_vc15.exe",
+      "sha256": "BE79C1D4B73A4C6E74ED78CAEC342E6EF877B3D9C3C8A84DCB2499E2D8D4494D"
+    },
+    {
+      "file": "rules_swift.2.3.0.tar.gz",
+      "url": "https://github.com/bazelbuild/rules_swift/releases/download/2.3.0/rules_swift.2.3.0.tar.gz",
+      "sha256": "7A626237CA4D9ECF4F5B4CB5BF13FF63AB6B27E101F834E7E2E07C3B98D583F9"
+    }
+  ]
+}

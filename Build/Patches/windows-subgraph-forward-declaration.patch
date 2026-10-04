@@ -1,0 +1,12 @@
+--- a/mediapipe/framework/api3/graph.h
++++ b/mediapipe/framework/api3/graph.h
+@@ -37,6 +37,9 @@
+ #include "mediapipe/framework/calculator.pb.h"
+ 
+ namespace mediapipe::api3 {
++
++template <typename NodeT>
++class SubgraphContext;
+ 
+ // `Graph` must be used whenever you want to build a MediaPipe graph in C++.
+ //

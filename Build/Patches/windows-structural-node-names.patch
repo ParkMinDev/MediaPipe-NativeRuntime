@@ -1,0 +1,94 @@
+--- a/mediapipe/calculators/tensor/image_to_tensor_calculator.h
++++ b/mediapipe/calculators/tensor/image_to_tensor_calculator.h
+@@ -31,8 +31,13 @@
+ 
+ namespace mediapipe::api3 {
+ 
++#if defined(_MSC_VER)
++inline constexpr char kImageToTensorNodeName[] =
++    "ImageToTensorCalculator";
++#else
+ inline constexpr absl::string_view kImageToTensorNodeName =
+     "ImageToTensorCalculator";
++#endif
+ 
+ // Converts image into Tensor, possibly with cropping, resizing and
+ // normalization, according to specified inputs and options.
+--- a/mediapipe/calculators/image/warp_affine_calculator.h
++++ b/mediapipe/calculators/image/warp_affine_calculator.h
+@@ -31,8 +31,14 @@
+ 
+ namespace mediapipe::api3 {
+ 
++
++#if defined(_MSC_VER)
++template <typename ImageT>
++inline constexpr char kWarpAffineNodeName[] = "";
++#else
+ template <typename ImageT>
+ inline constexpr absl::string_view kWarpAffineNodeName;
++#endif
+ 
+ // Runs affine transformation.
+ //
+@@ -83,23 +89,44 @@
+ 
+ #if !MEDIAPIPE_DISABLE_OPENCV
+ 
++
++#if defined(_MSC_VER)
++template <>
++inline constexpr char kWarpAffineNodeName<ImageFrame>[] =
++    "WarpAffineCalculatorCpu";
++#else
+ template <>
+ inline constexpr absl::string_view kWarpAffineNodeName<ImageFrame> =
+     "WarpAffineCalculatorCpu";
++#endif
+ 
+ #endif  // !MEDIAPIPE_DISABLE_OPENCV
+ 
+ #if !MEDIAPIPE_DISABLE_GPU
+ 
++
++#if defined(_MSC_VER)
++template <>
++inline constexpr char kWarpAffineNodeName<GpuBuffer>[] =
++    "WarpAffineCalculatorGpu";
++#else
+ template <>
+ inline constexpr absl::string_view kWarpAffineNodeName<GpuBuffer> =
+     "WarpAffineCalculatorGpu";
++#endif
+ 
+ #endif  // !MEDIAPIPE_DISABLE_GPU
+ 
++
++#if defined(_MSC_VER)
++template <>
++inline constexpr char kWarpAffineNodeName<Image>[] =
++    "WarpAffineCalculator";
++#else
+ template <>
+ inline constexpr absl::string_view kWarpAffineNodeName<Image> =
+     "WarpAffineCalculator";
++#endif
+ 
+ }  // namespace mediapipe::api3
+ 
+--- a/mediapipe/tasks/cc/vision/gesture_recognizer/calculators/handedness_to_matrix_calculator.h
++++ b/mediapipe/tasks/cc/vision/gesture_recognizer/calculators/handedness_to_matrix_calculator.h
+@@ -25,8 +25,13 @@
+ namespace mediapipe {
+ namespace tasks {
+ 
++#if defined(_MSC_VER)
++inline constexpr char kHandednessToMatrixNodeName[] =
++    "HandednessToMatrixCalculator";
++#else
+ inline constexpr absl::string_view kHandednessToMatrixNodeName =
+     "HandednessToMatrixCalculator";
++#endif
+ 
+ // Convert single hand handedness into a matrix.
+ //
