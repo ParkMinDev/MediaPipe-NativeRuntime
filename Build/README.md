@@ -62,6 +62,6 @@ The existing package Android ARM64 library was source-built with the same upstre
 
 ## Verification on 2026-10-04
 
-Windows source compilation succeeded with MSVC 14.51.36231 and JDK 21 in both the existing working folder and a separate clone with independently downloaded tools/source and a separate Bazel cache. Final compatibility fixes were applied to the clone before its successful build.
+Windows source compilation succeeded with MSVC 14.51.36231 and JDK 21 in both the existing working folder and a separate clone with independently downloaded tools/source and a separate Bazel cache. Final compatibility fixes were applied to the clone before its successful build. Rebuilding into the same output directory was also verified, including replacement of read-only generated DLL files.
 
 Both source-built DLLs export the same 313 names, but their file hashes differ. The official packaged DLL exports 465 names and is not byte-identical to either source build. The eight functions imported by the current MediaPipePlugin are present in both source builds; DLL loading and 2x2 RGB image creation/freeing succeeded. Pose model inference, Unity execution and Android rebuilding were not tested in this verification.

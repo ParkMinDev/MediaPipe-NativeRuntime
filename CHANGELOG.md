@@ -9,4 +9,5 @@
 - Generate local tools and source copies without machine-specific folder links; use a short per-checkout cache path for MSVC compilation.
 - Scope the standard preprocessor and Protobuf C++17 compatibility settings to their affected source files.
 - Document prerequisites, clean-clone commands, outputs, and the distinction between source-built and official package binaries.
+- Allow repeated builds to replace read-only generated DLL outputs.
 - Keep generated caches and build products ignored; Unity package binaries and package version are unchanged.

@@ -60,8 +60,8 @@ try {
     & (Join-Path $tools 'bazelisk-windows-amd64.exe') @arguments 2>&1 | Tee-Object -FilePath (Join-Path $output 'build.log')
     if ($LASTEXITCODE -ne 0) { throw "MediaPipe build failed; see $output/build.log." }
     $binary = Join-Path $OutputBase 'execroot/_main/bazel-out/x64_windows-opt/bin/mediapipe/tasks/c/mediapipe_source.dll'
-    Copy-Item -LiteralPath $binary -Destination (Join-Path $output 'libmediapipe.dll')
-    Copy-Item -LiteralPath (Join-Path $tools 'opencv/opencv/build/x64/vc15/bin/opencv_world3410.dll') -Destination $output
+    Copy-Item -LiteralPath $binary -Destination (Join-Path $output 'libmediapipe.dll') -Force
+    Copy-Item -LiteralPath (Join-Path $tools 'opencv/opencv/build/x64/vc15/bin/opencv_world3410.dll') -Destination $output -Force
     $result = [ordered]@{
         sourceCommit = $settings.source.commit
         bazelVersion = $settings.bazelVersion
