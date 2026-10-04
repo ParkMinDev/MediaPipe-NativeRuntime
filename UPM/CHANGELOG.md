@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.1.5] - 2026-10-04
+
+### Changed
+- Joined the project name in the package identifier and display name: `com.parkmindev.mediapipenativeruntime.upm` / `ParkMinDev.MediaPipeNativeRuntime.UPM`.
+- Preserved native artifacts, model paths, and Unity asset GUIDs.
+
 ## [0.1.4] - 2026-10-04
 
 ### Changed

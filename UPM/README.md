@@ -1,4 +1,4 @@
-# ParkMinDev.MediaPipe.NativeRuntime.UPM
+# ParkMinDev.MediaPipeNativeRuntime.UPM
 
 Platform-native MediaPipe binaries and model assets for ParkMinPackages Unity integrations.
 
