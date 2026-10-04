@@ -2,6 +2,8 @@
 
 ## 2026-10-04
 
+- Expand Windows build prerequisite documentation with required versions, installation checks and automatically prepared dependencies.
+
 - Preserve Windows model-file-descriptor, optional gzip header, internal visitor-template, subgraph declaration and MSVC node-name fixes as tracked patches.
 - Require PowerShell 7.2 or later for the build script's .NET hashing APIs.
 - Add portable Windows preparation/build scripts with pinned upstream source, tool URLs/hashes and Bazel module lock metadata.
