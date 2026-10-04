@@ -2,7 +2,7 @@
 
 Platform-native MediaPipe binaries and model assets for ParkMinPackages Unity integrations.
 
-This package is the deployment boundary between MediaPipe native distributions and Unity. It does not provide the managed Runner API; use `ParkMinPackages.MediaPipePlugin` for Unity-facing runtime features.
+This package is the deployment boundary between MediaPipe native distributions and Unity. It does not provide the managed Runner API; use `ParkMinDev.UPM.MediaPipePlugin` for Unity-facing runtime features.
 
 ## Installation
 

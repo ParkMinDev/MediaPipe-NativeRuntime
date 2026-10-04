@@ -1,7 +1,7 @@
 {
   "name": "com.parkmindev.mediapipenativeruntime.upm",
   "displayName": "ParkMinDev.MediaPipeNativeRuntime.UPM",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "license": "MIT",
   "documentationUrl": "https://github.com/ParkMinDev/MediaPipeNativeRuntime/blob/main/UPM/README.md",
   "changelogUrl": "https://github.com/ParkMinDev/MediaPipeNativeRuntime/blob/main/UPM/CHANGELOG.md",
