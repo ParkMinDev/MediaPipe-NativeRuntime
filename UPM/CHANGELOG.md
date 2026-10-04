@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.1.3] - 2026-10-04
+
+### Changed
+- Renamed the installable package directory from UPMPackage to UPM and updated repository documentation links and package-path metadata.
+- Kept the Unity package identity, native binaries, models, and asset GUIDs unchanged.
+
 ## [0.1.2] - 2026-10-04
 
 ### Changed

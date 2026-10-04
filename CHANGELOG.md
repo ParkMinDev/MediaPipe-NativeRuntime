@@ -2,6 +2,8 @@
 
 ## 2026-10-04
 
+- Rename the installable package directory from UPMPackage to UPM, update discovery and documentation paths, and release NativeRuntime 0.1.3 without changing native binaries, models, or Unity asset GUIDs.
+
 - Expand Windows build prerequisite documentation with required versions, installation checks and automatically prepared dependencies.
 
 - Preserve Windows model-file-descriptor, optional gzip header, internal visitor-template, subgraph declaration and MSVC node-name fixes as tracked patches.

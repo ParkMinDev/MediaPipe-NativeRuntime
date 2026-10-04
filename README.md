@@ -6,19 +6,19 @@ The repository keeps the pinned upstream MediaPipe source and local build worksp
 
 ## Unity Package
 
-Install the package from the `UPMPackage` subdirectory.
+Install the package from the `UPM` subdirectory.
 
 ```text
-https://github.com/ParkMinDev/MediaPipe-NativeRuntime.git?path=/UPMPackage
+https://github.com/ParkMinDev/MediaPipe-NativeRuntime.git?path=/UPM
 ```
 
-Package documentation is available at [`UPMPackage/README.md`](UPMPackage/README.md).
+Package documentation is available at [`UPM/README.md`](UPM/README.md).
 
 ## Repository Layout
 
 - `Source/MediaPipe`: pinned upstream MediaPipe source submodule
 - `Build`: tracked build scripts, configuration, source patches, and ignored local tools/outputs
-- `UPMPackage`: installable Unity package containing native binaries and models
+- `UPM`: installable Unity package containing native binaries and models
 
 ## Rebuild from source
 
