@@ -3,6 +3,7 @@
 ## 2026-10-04
 
 - Preserve Windows model-file-descriptor, optional gzip header, internal visitor-template, subgraph declaration and MSVC node-name fixes as tracked patches.
+- Require PowerShell 7.2 or later for the build script's .NET hashing APIs.
 - Add portable Windows preparation/build scripts with pinned upstream source, tool URLs/hashes and Bazel module lock metadata.
 - Preserve the existing C++-only Swift module configuration.
 - Generate local tools and source copies without machine-specific folder links; use a short per-checkout cache path for MSVC compilation.

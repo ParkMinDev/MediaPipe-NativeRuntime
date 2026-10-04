@@ -2,7 +2,7 @@
 
 ## Windows x86_64 source build
 
-Install Git for Windows with Git LFS (Large File Storage), PowerShell 7, Visual Studio with **Desktop development with C++** and a Windows SDK, and JDK 21 (Java Development Kit). The build needs internet access to download pinned source/tool dependencies. It is not an offline build.
+Install Git for Windows with Git LFS (Large File Storage), PowerShell 7.2 or later, Visual Studio with **Desktop development with C++** and a Windows SDK, and JDK 21 (Java Development Kit). The build needs internet access to download pinned source/tool dependencies. It is not an offline build.
 
 Use a reasonably short local path. Bazel's generated Windows paths can become very long.
 
